@@ -19,24 +19,47 @@ export default function WeddingRSVP() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
 useEffect(() => {
-  // Handler to play audio after user scrolls at least 10px
-  const handleScroll = () => {
-    if (window.scrollY >= 10 && !isPlaying && audioRef.current) {
-      try {
-        audioRef.current.play()
+  // Handler to play audio after user scrolls at least 10px or clicks/touches anywhere
+  const tryPlayAudio = () => {
+    if (!isPlaying && audioRef.current) {
+      const playPromise = audioRef.current.play()
+      if (playPromise && typeof playPromise.then === "function") {
+        playPromise
+          .then(() => {
+            setIsPlaying(true)
+            cleanup()
+          })
+          .catch(() => {
+            // Auto-play blocked, wait for further interaction
+          })
+      } else {
         setIsPlaying(true)
-        window.removeEventListener("scroll", handleScroll)
-      } catch (error) {
-        console.log("Auto-play blocked, user interaction required")
+        cleanup()
       }
     }
   }
 
-  window.addEventListener("scroll", handleScroll)
-
-  return () => {
-    window.removeEventListener("scroll", handleScroll)
+  const handleScroll = () => {
+    if (window.scrollY >= 10) {
+      tryPlayAudio()
+    }
   }
+
+  const handleUserInteraction = () => {
+    tryPlayAudio()
+  }
+
+  function cleanup() {
+    window.removeEventListener("scroll", handleScroll)
+    window.removeEventListener("click", handleUserInteraction)
+    window.removeEventListener("touchstart", handleUserInteraction)
+  }
+
+  window.addEventListener("scroll", handleScroll)
+  window.addEventListener("click", handleUserInteraction)
+  window.addEventListener("touchstart", handleUserInteraction)
+
+  return cleanup
 }, [isPlaying])
 
 
