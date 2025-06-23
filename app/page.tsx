@@ -190,7 +190,7 @@ useEffect(() => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 mb-12 sm:mb-16">
             <div className="flex justify-center order-1 lg:order-1">
               <img
-                src="/images/new-couple-photo.jpg"
+                src="/takunda-and-rebecca/images/new-couple-photo.jpg"
                 alt="Rebecca and Takunda formal engagement photo in garden setting"
                 className="rounded-lg shadow-lg max-w-full h-auto w-full max-w-md"
               />
@@ -237,7 +237,7 @@ useEffect(() => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
               <div className="flex justify-center">
                 <img
-                  src="/images/engagement-photo-1.jpg"
+                  src="/takunda-and-rebecca/images/engagement-photo-1.jpg"
                   alt="Rebecca and Takunda formal engagement photo by the pool"
                   className="rounded-lg shadow-lg max-w-full h-auto w-full object-cover aspect-[3/4] hover:shadow-xl transition-shadow duration-300"
                   loading="lazy"
@@ -248,7 +248,7 @@ useEffect(() => {
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/images/engagement-photo-2.jpg"
+                  src="/takunda-and-rebecca/images/engagement-photo-2.jpg"
                   alt="Rebecca and Takunda engagement photo in garden setting"
                   className="rounded-lg shadow-lg max-w-full h-auto w-full object-cover aspect-[3/4] hover:shadow-xl transition-shadow duration-300"
                   loading="lazy"
@@ -259,7 +259,7 @@ useEffect(() => {
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/images/engagement-photo-3.jpg"
+                  src="/takunda-and-rebecca/images/engagement-photo-3.jpg"
                   alt="Rebecca and Takunda intimate moment during engagement shoot"
                   className="rounded-lg shadow-lg max-w-full h-auto w-full object-cover aspect-[3/4] hover:shadow-xl transition-shadow duration-300"
                   loading="lazy"
@@ -409,7 +409,7 @@ useEffect(() => {
     <div className="font-['Inter']">
       {/* Background Audio */}
       <audio ref={audioRef} loop preload="auto" className="hidden">
-        <source src="/audio/give-thanks.mp3" type="audio/mpeg" />
+        <source src="/takunda-and-rebecca/audio/give-thanks.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
