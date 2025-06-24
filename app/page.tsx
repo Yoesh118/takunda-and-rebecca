@@ -210,7 +210,7 @@ useEffect(() => {
                 Date & Time
               </h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6 text-center lg:text-left">
-                09 August 2025, 1000hrs
+                09 August 2025, 0900hrs
               </p>
               <h2 className="text-2xl sm:text-3xl font-['Playfair_Display'] font-light mb-4 sm:mb-6 text-center lg:text-left">
                 Location
@@ -223,7 +223,7 @@ useEffect(() => {
               </h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-center lg:text-left">
                 Your presence is worth more to us than any gift this world could afford. Taking time out of your busy
-                schedules to come and celebrate with us is more than enough. If you insist however, we would be very
+                schedules to come and celebrate with us is more than enough. We would be very
                 honoured to receive any gift you have for us although cash gifts are preferred.
               </p>
             </div>
