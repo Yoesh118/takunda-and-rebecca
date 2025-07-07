@@ -222,8 +222,7 @@ useEffect(() => {
                 Gifts
               </h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-center lg:text-left">
-                Your presence is worth more to us than any gift this world could afford. Taking time out of your busy
-                schedules to come and celebrate with us is more than enough. We would be very
+                Your presence is worth more to us than any gift this world could afford. We would however be very
                 honoured to receive any gift you have for us although cash gifts are preferred.
               </p>
             </div>
