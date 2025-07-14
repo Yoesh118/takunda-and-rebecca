@@ -294,7 +294,7 @@ useEffect(() => {
           <Card className="bg-white shadow-lg">
             <CardContent className="p-4 sm:p-6 lg:p-8">
               <h2 className="text-xl sm:text-2xl font-['Playfair_Display'] font-light mb-4 sm:mb-6 text-center">
-                Please Respond by 01 July 2025
+                Please Respond by 21 July 2025
               </h2>
               <p className="mb-4 sm:mb-6 text-sm sm:text-base text-center sm:text-left px-2 sm:px-0">
                 <span className="text-red-600 font-semibold">*Please Note:</span> Even if you and your spouse/ family
@@ -303,12 +303,21 @@ useEffect(() => {
               </p>
               <form onSubmit={handleRSVPSubmit} className="space-y-4 sm:space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                  <div>
+                    <div>
                     <Label htmlFor="name" className="text-sm sm:text-base">
                       Full Name *
                     </Label>
-                    <Input id="name" name="name" type="text" required className="mt-2" autoComplete="name" />
-                  </div>
+                    <Input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      className="mt-2"
+                      autoComplete="name"
+                      title="Please enter your full name (first and last name)"
+                      placeholder="e.g. Rebecca Mathathu"
+                    />
+                    </div>
                   <div>
                     <Label htmlFor="phoneNumber" className="text-sm sm:text-base">
                       Phone Number *
